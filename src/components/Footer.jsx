@@ -8,7 +8,7 @@ const Footer = () => {
           © 2025 <a href="https://github.com/salmantok/SIDKita">SIDKita</a>
         </p>
         <p className="mb-0 text-center">
-          Kontributor <a href="http://salmantok.ct.ws/salman.html">Salman</a>
+          Kontributor <a href="http://salmantok.ct.ws/">Salman</a>
         </p>
       </Container>
     </footer>

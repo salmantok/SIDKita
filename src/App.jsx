@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Header from './components/Header'
 import Footer from './components/Footer'
-import Home from './pages/Home'
-import Profile from './pages/Profile'
-import News from './pages/News'
 import Gallery from './pages/Gallery'
+import Header from './components/Header'
+import Home from './pages/Home'
+import News from './pages/News'
+import Profile from './pages/Profile'
 
 const App = () => {
   return (
