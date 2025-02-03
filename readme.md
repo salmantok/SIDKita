@@ -17,44 +17,44 @@ Membuat website SID statis memiliki beberapa kelebihan dan kekurangan yang perlu
 
 1. **Keamanan**:
 
-   - Situs statis cenderung lebih aman karena tidak menyimpan atau mengolah data yang sering berubah seperti database dinamis.
-   - Tidak ada kerentanan yang terkait dengan database atau CMS yang umum terjadi pada situs dinamis.
+    - Situs statis cenderung lebih aman karena tidak menyimpan atau mengolah data yang sering berubah seperti database dinamis.
+    - Tidak ada kerentanan yang terkait dengan database atau CMS yang umum terjadi pada situs dinamis.
 
 2. **Performa**:
 
-   - Karena tidak melibatkan database atau kode server-side yang kompleks, situs statis cenderung memiliki waktu muat yang lebih cepat dan performa yang baik.
+    - Karena tidak melibatkan database atau kode server-side yang kompleks, situs statis cenderung memiliki waktu muat yang lebih cepat dan performa yang baik.
 
 3. **Biaya**:
 
-   - Situs statis biasanya lebih murah untuk dihosting dan dipelihara karena tidak memerlukan server yang kompleks atau banyak sumber daya.
+    - Situs statis biasanya lebih murah untuk dihosting dan dipelihara karena tidak memerlukan server yang kompleks atau banyak sumber daya.
 
 4. **Sederhana**:
 
-   - Mudah diatur dan dipelihara tanpa perlu pembaruan terus-menerus atau pengelolaan data yang rumit.
+    - Mudah diatur dan dipelihara tanpa perlu pembaruan terus-menerus atau pengelolaan data yang rumit.
 
 ### Kekurangan Membuat Website SID Statis:
 
 1. **Dinamis**:
 
-   - Situs statis tidak dapat dengan mudah mengelola data yang sering berubah seperti formulir, pendaftaran, atau data desa yang memerlukan interaktivitas dinamis.
+    - Situs statis tidak dapat dengan mudah mengelola data yang sering berubah seperti formulir, pendaftaran, atau data desa yang memerlukan interaktivitas dinamis.
 
 2. **Opsi Terbatas**:
 
-   - Tidak ada kemampuan untuk mengelola data secara langsung melalui backend seperti input atau pengeditan data desa secara dinamis.
+    - Tidak ada kemampuan untuk mengelola data secara langsung melalui backend seperti input atau pengeditan data desa secara dinamis.
 
 3. **Maintenance**:
 
-   - Perubahan pada konten memerlukan pengeditan manual pada file-file statis, yang bisa merepotkan jika kontennya sering berubah.
+    - Perubahan pada konten memerlukan pengeditan manual pada file-file statis, yang bisa merepotkan jika kontennya sering berubah.
 
 ### Apakah Website SID Statis Aman dan Baik?
 
 - **Keamanan**:
 
-  - Secara umum, situs statis memiliki tingkat keamanan yang tinggi jika dipastikan bahwa semua aset, kode, dan layanan hosting dikonfigurasi dengan baik. Namun, jika perlu mengelola data sensitif seperti data pribadi atau statistik desa yang sering berubah, maka pendekatan yang lebih dinamis menggunakan database seperti MySQL untuk menyimpan data, atau seperti dengan CMS (WordPress, Joomla, dll.) bisa lebih cocok.
+    - Secara umum, situs statis memiliki tingkat keamanan yang tinggi jika dipastikan bahwa semua aset, kode, dan layanan hosting dikonfigurasi dengan baik. Namun, jika perlu mengelola data sensitif seperti data pribadi atau statistik desa yang sering berubah, maka pendekatan yang lebih dinamis menggunakan database seperti MySQL untuk menyimpan data, atau seperti dengan CMS (WordPress, Joomla, dll.) bisa lebih cocok.
 
 - **Kebaikan**:
 
-  - Jika hanya membutuhkan tampilan informasi desa yang tidak sering berubah, situs statis bisa menjadi pilihan yang baik, terutama untuk meningkatkan kinerja dan mengurangi biaya hosting.
+    - Jika hanya membutuhkan tampilan informasi desa yang tidak sering berubah, situs statis bisa menjadi pilihan yang baik, terutama untuk meningkatkan kinerja dan mengurangi biaya hosting.
 
 Jika SID memerlukan fitur interaktif seperti pengelolaan data, formulir, atau dashboard, maka situs dinamis mungkin lebih cocok.
 
@@ -75,28 +75,28 @@ Jika SID memerlukan fitur interaktif seperti pengelolaan data, formulir, atau da
 
 1. **Clone Repository**:
 
-   ```bash
-   git clone https://github.com/salmantok/SIDKita.git
-   cd SIDKita
-   ```
+    ```bash
+    git clone https://github.com/salmantok/SIDKita.git
+    cd SIDKita
+    ```
 
 2. **Install Dependensi**:
 
-   ```bash
-   npm install
-   ```
+    ```bash
+    npm install
+    ```
 
 3. **Jalankan Aplikasi**:
 
-   ```bash
-   npm run dev
-   ```
+    ```bash
+    npm run dev
+    ```
 
 4. **Build untuk Produksi**:
 
-   ```bash
-   npm run build
-   ```
+    ```bash
+    npm run build
+    ```
 
 ## Struktur Navigasi
 
@@ -111,32 +111,32 @@ Jika SID memerlukan fitur interaktif seperti pengelolaan data, formulir, atau da
 
 1. **Menambah Berita Baru**:
 
-   - Buka file `src/pages/News.jsx`.
-   - Tambahkan berita baru di array `newsData`:
+    - Buka file `src/pages/News.jsx`.
+    - Tambahkan berita baru di array `newsData`:
 
-     ```js
-     const newsData = [
-       {
-         title: 'Judul Berita',
-         date: 'Tanggal',
-         content: 'Isi berita.',
-       },
-     ]
-     ```
+        ```js
+        const newsData = [
+            {
+                title: 'Judul Berita',
+                date: 'Tanggal',
+                content: 'Isi berita.',
+            },
+        ];
+        ```
 
 2. **Mengubah Data Desa**:
 
-   - Edit file `src/pages/Profile.jsx` untuk memperbarui informasi Desa, seperti nama, kepala Desa, atau statistik.
+    - Edit file `src/pages/Profile.jsx` untuk memperbarui informasi Desa, seperti nama, kepala Desa, atau statistik.
 
 3. **Menambah Gambar Galeri**:
 
-   - Tambahkan item baru di array `images` di file `src/pages/Gallery.jsx`:
+    - Tambahkan item baru di array `images` di file `src/pages/Gallery.jsx`:
 
-     ```js
-     const images = [
-       { src: 'URL gambar', alt: 'Deskripsi', title: 'Judul gambar' },
-     ]
-     ```
+        ```js
+        const images = [
+            { src: 'URL gambar', alt: 'Deskripsi', title: 'Judul gambar' },
+        ];
+        ```
 
 ## Lisensi
 
